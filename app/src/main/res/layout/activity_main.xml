@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/qrInput"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:drawableStartCompat="@drawable/round_qr_code"
+        app:drawableEndCompat="@drawable/round_qr_code_scanner"
+        android:textAlignment="center"
+        android:text="QR CODE GENERATOR AND SCANNER"
+        android:textSize="16sp"
+        android:background="#32B5C7"/>
+
+    <Button
+        android:id="@+id/generateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="14dp"
+        android:layout_below="@+id/qrInput"
+        android:background="@drawable/edit_button"
+        android:textColor="#F3F1F3"
+        android:textSize="18sp"
+        android:text="Generate Qr Code"/>
+
+    <ImageView
+        android:id="@+id/qrPlaceHolder"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/main_screen_image"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/generateBtn"/>
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/qrPlaceHolder"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="SCAN QR code"
+        android:background="@drawable/edit_button"/>
+
+</RelativeLayout>
